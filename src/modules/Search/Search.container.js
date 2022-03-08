@@ -12,6 +12,9 @@ const SearchContainer = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
+        setPage(1)
+    }, [query.get('q')])
+    useEffect(() => {
         const getData = async () => {
             if (!searchText) {
                 navigate('/')

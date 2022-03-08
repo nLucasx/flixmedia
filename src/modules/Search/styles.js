@@ -34,4 +34,8 @@ export const NotFound = styled.div`
     font-size: 46px;
     color: #FFFF;
 
+    @media screen and (max-width: 480px) {
+        font-size: 28px;
+    }
+
 `
