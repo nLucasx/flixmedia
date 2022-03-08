@@ -179,7 +179,7 @@ export const StyledCard = styled.div`
         }};
         height: ${props => {
             if (props.cardStyle === 2) {
-                return "380px"
+                return "550px"
             }
             return ""
         }};
@@ -193,12 +193,5 @@ export const StyledCard = styled.div`
             }
             return ""
         }};
-        height: ${props => {
-            if (props.cardStyle === 2) {
-                return "480px"
-            }
-            return ""
-        }};
-        
     }
 `

@@ -229,9 +229,10 @@ export const ListContent = styled.div`
     height: 100%;
     background-image: ${props => `url(${props.url})`};
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
-    @media screen and (max-width: 500px) {
-        background-size: 380px 480px;
+    @media screen and (max-width: 780px) {
+        background-size: 100% 100%;
         
     }
 `
@@ -241,37 +242,46 @@ export const ListGradient = styled.div`
     height: inherit;
     background: linear-gradient(to right, #111 20%, transparent);
     border-radius: 10px;
-
+    
+    @media screen and (max-width: 1000px) {
+        background: linear-gradient(to right, #111 30%, transparent);
+    }
 `
 
 export const ListInformation = styled.div`
     width: 40%;
     padding: 20px;
     white-space: wrap;
-
     @media screen and (max-width: 1000px) {
-        width: 80%;
+        width: 60%;
     }
+
 `
 export const ListTitle = styled.span`
     font-size: 45px;
     color: #FFF;
     
+    @media screen and (max-width: 1080px) {
+        font-size: 38px;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
 `
 
 export const ListDescription = styled.span`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
     
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     color: #FFF;
     
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1080px) {
         font-size: 16px;
     }
     
     @media screen and (max-width: 500px) {
-        font-size: 15px;
+        font-size: 13px;
     }
 `

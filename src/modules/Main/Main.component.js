@@ -172,10 +172,10 @@ const Main = ({ topRated, popular, page, setPage, loading }) => {
                                                 <div style={{ marginTop: '30px' }}>
                                                     <ListDescription>
                                                         {item.overview ? (
-                                                            item.overview.split("").map((c, i) => i <= 450 ? c : "")
+                                                            item.overview.split(" ").map((c, i) => i <= 70 ? c + " " : "")
                                                         ) : "Descrição não fornecida."}
                                                         {item.overview && (
-                                                            item.overview.length > 450 ? "..." : ""
+                                                            item.overview.split(" ").length > 70 ? "..." : ""
                                                         )}
                                                     </ListDescription>
                                                 </div>

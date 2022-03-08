@@ -14,6 +14,7 @@ const SearchContainer = () => {
     useEffect(() => {
         setPage(1)
     }, [query.get('q')])
+    
     useEffect(() => {
         const getData = async () => {
             if (!searchText) {
